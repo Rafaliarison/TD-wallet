@@ -1,6 +1,5 @@
 package com.wallet.tdwallet.service;
 
-import com.wallet.tdwallet.connection.Connection;
 import com.wallet.tdwallet.model.Account;
 import lombok.AllArgsConstructor;
 
