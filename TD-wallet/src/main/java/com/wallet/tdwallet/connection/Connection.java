@@ -10,7 +10,7 @@ public class Connection {
     private String url;
     @Value("${spring.datasource.user}")
     private String user;
-    @Value("${sring.datasource.password")
+    @Value("${spring.datasource.password")
     private String password;
 
     public java.sql.Connection connect() {
