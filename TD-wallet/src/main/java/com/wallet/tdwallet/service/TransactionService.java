@@ -5,10 +5,7 @@ import com.wallet.tdwallet.model.Account;
 import com.wallet.tdwallet.repository.TransactionRepository;
 import lombok.AllArgsConstructor;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 
 @AllArgsConstructor
 public class TransactionService {
@@ -22,6 +19,8 @@ public class TransactionService {
             preparedStatement.setString(3, transactionType);
             preparedStatement.executeUpdate();
 
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 }
