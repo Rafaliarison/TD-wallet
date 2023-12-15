@@ -11,6 +11,6 @@ import java.time.ZonedDateTime;
 @EqualsAndHashCode
 public class Solde {
     private int soldeId;
+    private double solde_amount;
     private LocalDateTime soldeDate;
-    private float solde_amount;
 }

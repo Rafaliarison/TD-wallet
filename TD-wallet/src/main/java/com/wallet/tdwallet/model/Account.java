@@ -2,6 +2,8 @@ package com.wallet.tdwallet.model;
 
 import lombok.*;
 
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -10,6 +12,8 @@ import lombok.*;
 public class Account {
     private int accountId;
     private String accountName;
-    private String accountCurrency;
-    private int accountSolde;
+    private String  accountType;
+    private int accountCurrency;
+    private double accountSolde;
+    private List<Transaction> transactions;
 }

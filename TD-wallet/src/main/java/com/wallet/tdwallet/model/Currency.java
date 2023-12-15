@@ -9,6 +9,6 @@ import lombok.*;
 @EqualsAndHashCode
 public class Currency {
     private int currencyId;
-    private String curreencyName;
+    private String currencyName;
     private String currencyCode;
 }

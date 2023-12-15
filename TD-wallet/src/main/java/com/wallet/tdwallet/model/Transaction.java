@@ -13,7 +13,7 @@ import java.time.ZonedDateTime;
 public class Transaction {
     private int transactionId;
     private String transactionLabel;
-    private int transactionAmount;
+    private double transactionAmount;
     private String transactionType;
     private LocalDateTime transactionDate;
 }
