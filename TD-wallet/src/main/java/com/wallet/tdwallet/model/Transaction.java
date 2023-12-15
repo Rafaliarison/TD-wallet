@@ -12,6 +12,7 @@ import java.time.ZonedDateTime;
 @EqualsAndHashCode
 public class Transaction {
     private int transactionId;
+    private int accountId;
     private String transactionLabel;
     private double transactionAmount;
     private String transactionType;
