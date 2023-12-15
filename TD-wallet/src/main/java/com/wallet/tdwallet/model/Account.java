@@ -10,7 +10,8 @@ import lombok.*;
 public class Account {
     private int accountId;
     private String accountName;
-    private String accountType;
-    private String accountCurrency;
-    private int accountSolde;
+    private String  accountType;
+    private int accountCurrency;
+    private double accountSolde;
+    private List<Transaction> transactions;
 }
