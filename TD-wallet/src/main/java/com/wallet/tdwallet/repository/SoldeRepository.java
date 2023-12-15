@@ -34,5 +34,24 @@ public class SoldeRepository {
         return solde;
     }
 
-
+    public List<Solde> findByDate(){
+        String sql = "select account_solde from account where solde_date = ?;";
+        List<Solde> soldes = new ArrayList<>();
+        try{
+            PreparedStatement preparedStatement = dbconnection.prepareStatement(sql);
+            ResultSet resultSet = preparedStatement.getResultSet();
+            while(resultSet.next()){
+                soldes.add(new Solde(
+                        resultSet.getInt("soldeId"),
+                        (LocalDateTime) resultSet.getObject("soldeDate"),
+                        resultSet.getFloat("soldeAmount")
+                ));
+            }
+            preparedStatement.close();
+            resultSet.close();
+        }catch (SQLException e){
+            System.out.println("Can't find the specific solde : " + e.getMessage());
+        }
+        return soldes;
+    }
 }
