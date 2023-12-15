@@ -12,5 +12,5 @@ import java.time.ZonedDateTime;
 public class Solde {
     private int soldeId;
     private LocalDateTime soldeDate;
-    private float solde_amount;
+    private float soldeAmount;
 }
